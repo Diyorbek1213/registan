@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        .header{
+            padding: 50px;
+        }
+        .main_container{
+            padding: 30px;
+        }
+        .header_container{
+            width: 1400px;
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header_items{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 32px;
+            color: #1C3554;
+            margin: 0px 20px;
+        }
+        .header_items img{
+            margin-bottom: -8px;
+        }
+        .header_logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .button1{
+            border: solid 1px;
+            padding: 8px 32px;
+            border-radius: 8px;
+        }
+        .button2{
+            background-color: #F72585;
+            padding: 8px 32px;
+            border-radius: 8px;
+            color: #fff;
+        }
+        .main_container{
+            width: 1400px;
+            margin: 0px auto;
+            background-color: #021934;
+            display: flex;
+            border-radius: 8px;
+            margin-bottom: 88px;
+        }
+        .text_title{
+            width: 610px;
+            height: 264px;
+            font-size: 64px;
+            line-height: 88px;
+            color: #fff;
+            font-weight: 700;
+            margin: 88px 93px 24px 64px;
+        }
+        .text_subtitle{
+            width: 647px;
+            height: 54px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            margin: 0px 56px 66px 64px ;
+        }
+        .text_search{
+            margin: 0px 93px 56px 64px;
+        } 
+        .text_item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .text_items img{
+            margin-bottom: -7px;
+            margin-right: 10px;
+        }
+        .main_img{
+            box-shadow: rgba(118, 192, 212, 0.2 ) 0px 4px 12px;
+        }
+        .rating_container{
+            width: 1400px;
+            margin: 0px auto;
+            margin-bottom: 160px;
+        }
+        .rating_title{
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 63px;
+            color: #1C3554;
+            text-align: center;
+        }
+        .rating_catolog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #aaa;
+            font-size: 16px;
+            line-height: 32px;
+            margin: 0px 0px 70px 0px;
+        }
+        .catolog_items{
+            padding: 8px 32px 8px 32px;
+            border-radius: 8px;
+            margin: 0px 24px;
+        }
+        .item{
+            background-color: #F72585;
+            text-align: center  ;
+            padding: 8px 32px 8px 32px;
+            color: #fff;
+            width: 110px;
+        }
+        .gaga{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            width: 295px;
+            height: 427px;
+            border-radius: 8px;
+            margin: 40px 0px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .box_img{
+            background-color: #ccc;
+            Width: 262.89px;
+            Height: 208px;
+            border-radius: 4px;
+            margin: 16px 16px 16px 16px;
+        }
+        .box_button{
+            background-color: #4586D6;
+            width: 131px;
+            padding: 9px;
+            border-radius: 8px;
+            margin: -36px 87px 11px 78px;
+            color: #fff;
+            text-align: center;
+        }
+        .box_text{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: #1C3554;
+            margin: 16px 16px 8px 16px;
+        }
+        .box_avtor{
+            color: #F72585;
+            font-size: 12px;
+            line-height: 24px;
+            margin: 8px 16px 8px 16px;
+        }
+        .img img{
+            margin: 0px 129px 16px 16px;
+        }
+        .box_sale s{
+        color: #ccc;
+        margin: 0px 2px 19px 16px;
+        font-size: 16px;
+        }
+        .box_sale{
+            color: #1C3554;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0px 16px 16px 0px;
+        }
+        .sugd{
+            display: flex;
+            justify-content: space-between;
+        }
+        .rating_box{
+            width: 295px;
+            height: 427px;
+            border-radius: 8px;
+            margin: 40px 0px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .rating_course{
+            font-size: 16px;
+            line-height: 32px;
+            color: #fff;
+            background-color: #F72585;
+            padding: 14px 24px;
+            width: 288px;
+            text-align: center;
+            margin: 0px 0px 0px 500px;
+            border-radius: 8px;
+        }
+        .category_container{
+            width: 1400px;
+            margin: 0px auto;
+            margin-bottom: 160px;
+        }
+        .category_title{
+            font-size: 48px;
+            line-height: 63.98px;
+            font-weight: 700;
+            color: #1C3554;
+            margin-bottom: 56px;
+        }
+        .column_img{
+            margin-top: 56px;
+            Width:296px;
+            Height: 350px;
+            background-color: #757474;
+            border-radius: 8px;
+        }
+        .column_text{
+            width: 154px;
+            height: 64px;
+            font-weight: 500;
+            font-size: 24px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: -59px;
+            margin-left: 80px;
+        }
+        .category_column{
+            display: flex;
+            justify-content: space-between;
+        }
+        .textr{
+            margin-top: -80px;
+        }
+        .info_container{
+            margin: 0px auto;
+            width: 1400px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 160px;
+        }
+        .info_box{
+            color: #1C3554;
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+        }
+        .info_text{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .info_subtext{
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    </style>
+    <style>
+    .mentor_container{
+        margin: 0px auto;
+        width: 1400px;
+        display: flex;
+        margin-bottom: 160px;
+    }
+    .mentor_img{
+        background-color: #ccc;
+        width: 608px;
+        height: 657px;
+        border-radius: 8px;
+    }
+    .mentor_texts{
+        width: 568px;
+    }
+    .mentor_title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 63px;
+        color: #1C3554;
+        margin: 109px 0px 32px 56px;
+    }
+    .mentor_text{
+        color: #808080;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-left: 56px;
+    }
+    .limon{
+        margin-bottom: 24px;
+    }
+    .mentor_start{
+        background-color: #F72585;
+        display: inline-block;
+        color: #ffffff;
+        padding: 16px 40px;
+        border-radius: 8px;
+        margin: 40px 0px 0px 56px;
+    }
+    .accent_container{
+        width: 1400px;
+        margin: 0px auto;
+        display: flex;
+        height: 505px;
+        margin-bottom: 160px;
+    }
+    .accent_img{
+        width: 338px;
+        height: 377px;
+        background-color: #ccc;
+    }
+    .accent_subtitle{
+        font-size: 32px;
+        line-height: 48px;
+        color: #1C3554;
+        margin: 63px 0px 32px 48px;
+    }
+    .accent_text{
+        width: 672px;
+        height: 377px;
+    }
+    .accent_avtor{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #1C3554;
+        margin: 0px 0px 8px 48px;
+    }
+    .accent_made{
+        font-size: 14px;
+        line-height: 24px;
+        color: #808080;
+        margin-left: 48px;
+    }
+    .accent_container img{
+        margin: 195px 32px 159px 70px;
+    }
+    .accent_img img{
+        margin: 234px 196px -90px -40px;
+    }
+    .company_container{
+        width: 1400px;
+        margin: 0px auto;
+        margin-bottom: 160px;
+    }
+    .company_title{
+        font-size: 48px;
+        line-height: 63px;
+        font-weight: 700;
+        text-align: center;
+        color: #1C3554;
+        margin-bottom: 56px;
+    }
+    .company_img{   
+        display: flex;
+        justify-content: center;
+    }
+    .company_img img{
+        margin-right: 56px;
+    }
+    .group{
+        margin-top: 18px;
+    }
+    </style>
+    <style>
+        .blog_title{
+            font-size: 48px;
+            color: #1C3554;
+            font-weight: 700;
+            line-height: 63px;
+            margin-bottom: 56px;
+            
+        }
+        .blog_container{
+            width: 1400px;
+            margin: 0px auto;
+            margin-bottom: 160px;
+        }
+        .blog_box{
+            width: 400px;
+            height: 518px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .loremm{
+            box-shadow: rgba(0, 0, 0, 0.19) 10px 10px 10px 0px , rgba(0, 0, 0, 0.23) 0px 6px 6px 0px;
+        }
+        .blog_img{
+            width: 368px;
+            height: 240px;
+            background-color: #ccc;
+            margin: 16px;
+            border-radius: 8px  ;
+        }
+        .blog_date{
+            display: flex;
+            justify-content: left;
+            color: #808080;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            margin: 0px 16px ;
+        }
+        .date1{
+            margin-right: 8px;
+        }
+        .blog_text{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #1C3554;
+            margin: 16px;
+        }
+        .blog_lorem{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            width: 368px;
+            color: #808080;
+            margin: 0px 16px 16px 16px;
+        }
+        .blog_more{
+            color: #F72585;
+            font-weight: 600;
+            line-height: 32px;
+            margin: 0px 16px 0px 16px;
+        }
+        .blog_column{
+            display: flex;
+        }
+        .end_container{
+            width: 1400px;
+            margin: 0px auto;
+            background-color: #021934;
+            color: #fff;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+    </style>
+    <style>
+        .end_box{
+            display: flex;
+            flex-direction: column;
+        }
+        .end_column{
+            display: flex;
+            justify-content: space-around;
+        }
+        .begin_text{
+            width: 500px;
+            margin-top: 36px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+        .end_begin{
+            margin: 80px 120px  0px 0px;
+        }
+        .end_end{
+            display: flex;
+            font-size: 16px;
+            line-height: 27px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            margin-top: 139px;
+        }
+        .end_begin1{
+            display: flex;
+        }
+        .end_about{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 109px 147px 0px;
+        }
+        .end_support{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 104px 120px 0px;
+        }
+        .end_company{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px 103px 120px 0px;
+        }
+        .about_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .support_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .companys_title{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            margin-bottom: 8px;
+        }
+        .about_items{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .support_item{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .company_items{
+            font-size: 16px;
+            line-height: 32px;
+        }
+        .end_made{
+            text-align: end;
+        }
+        .end_2{
+            margin: 0px 0px 0px 40px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header_container">
+        <div class="logo"><img src="logo.png" alt="" width="161px" height="32px"></div>
+        <div class="search"><img src="Search Bar.png" alt=""></div>
+        <div class="header_logo">
+            <div class="header_items">Category<img src="arrow_drop_down.png" alt=""></div>
+            <div class="header_items">Become an Mentor</div>
+            <div class="header_items button1">Login</div>
+            <div class="header_items button2">Sign Up</div>
+        </div>
+    </div>
+    </div>
+    <div class="main">
+        <div class="main_container">
+            <div class="main_text">
+                <div class="text_title"> Find the Best Courses and Amazing Mentor </div>
+                <div class="text_subtitle"> Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus  </div>
+                <div class="text_search"><img src="Searching.png" alt=""></div>
+                <div class="text_item">
+                <div class="text_items"><img src="access_alarm.png" alt="">Life Time Acces</div>
+                <div class="text_items"><img src="user.png" alt="">Expert Mentor</div>
+                <div class="text_items"><img src="video_library.png" alt="">100K+ Courses</div>
+            </div>
+            </div>
+            <div class="main_img"><img src="Image Place Holder.png" alt=""></div>
+        </div>
+    </div>
+    <div class="rating">
+        <div class="rating_container">
+            <div class="rating_title">Trending Courses</div>
+            <div class="rating_catolog">
+                <div class="catolog_items item">All</div>
+                <div class="catolog_items">Business</div>
+                <div class="catolog_items">Art & Design</div>
+                <div class="catolog_items">Development</div>
+                <div class="catolog_items">Marketing</div>
+            </div>
+            <div class="sugd">
+            <div class="rating_box gaga">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+        </div>
+        <div class="sugd">
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+            <div class="rating_box">
+                <div class="box_img"></div>
+                <div class="box_button">UI/UX Design</div>
+                <div class="box_text">Interpersonal skills - Work better with others!</div>
+                <div class="box_avtor">Tanah Air Team</div>
+                <div class="img"><img src="Rating (1).png" alt=""></div>
+                <div class="box_sale"><s>$640</s> $384</div>
+            </div>
+        </div>
+        <div class="rating_course">More Courses</div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="category_container">
+            <div class="category_title">Top Categories</div>
+            <div class="category_column">
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Art & Design</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Business</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Copy Writing</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Marketing</div>
+                </div>
+            </div>
+            <div class="category_column">
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Programming</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Photography</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text">Videography</div>
+                </div>
+                <div class="column_box">
+                    <div class="column_img"></div>
+                    <div class="column_text textr">Personal Development</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info_container">
+            <div class="info_box">
+                <div class="info_img"><img src="video.png" alt=""></div>
+                <div class="info_text">10.000+</div>
+                <div class="info_subtext">Courses</div>
+            </div>
+            <div class="info_box">
+                <div class="info_img"><img src="Container.png" alt=""></div>
+                <div class="info_text">50.000+</div>
+                <div class="info_subtext">Active Students</div>
+            </div>
+            <div class="info_box">
+                <div class="info_img"><img src="Container (1).png" alt=""></div>
+                <div class="info_text">1000+</div>
+                <div class="info_subtext">Active Mentor</div>
+            </div>
+            <div class="info_box">
+                <div class="info_img"><img src="flag.png" alt=""></div>
+                <div class="info_text">180</div>
+                <div class="info_subtext">Countries</div>
+            </div>
+        </div>
+    </div>
+    <div class="mentor">
+        <div class="mentor_container">
+            <div class="mentor_img"></div>
+            <div class="mentor_texts">
+            <div class="mentor_title">Become an Mentor</div>
+            <div class="mentor_text limon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.</div>
+            <div class="mentor_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.</div>
+            <div class="mentor_start">Start Teaching</div>
+        </div>
+    </div>
+    </div>
+    <div class="accent">
+        <div class="accent_container">
+            <img src="Arrow Chevron Right.png" alt="" width="24px" height="24px">
+            <div class="accent_img"><img src="Accent.png" alt=""></div>
+            <div class="accent_text">
+                <div class="accent_subtitle">After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!</div>
+                <div class="accent_avtor">KecekArif</div>
+                <div class="accent_made">Yang punya Surabaya nanti kapan - kapan tapi</div>
+            </div>
+            <img src="Arrow Chevron Right (1).png" alt="" width="24px" height="24px">
+        </div>
+    </div>
+    <div class="company">
+        <div class="company_container">
+            <div class="company_title">Trusted by Company</div>
+            <div class="company_img">
+                <img class="studio" src="studio.png" alt="">
+                <img class="group" src="Group.png" alt=""height="72px">
+                <img class="ipsum" src="ipsum.png" alt="">
+                <img class="studio2" src="studio.png" alt="">
+            </div>
+            <div class="company_img">
+                <img class="ipsum2" src="ipsum.png" alt="" >
+                <img class="group" src="Group.png" alt="" height="72px">
+        </div>
+    </div>
+    </div>
+    <div class="blog">
+        <div class="blog_container">
+            <div class="blog_title">The Latest Blog</div>
+            <div class="blog_column">
+                <div class="blog_box loremm">
+                    <div class="blog_img"></div>
+                    <div class="blog_date">
+                        <div class="date1">3, Mei 2021</div>
+                        <div class="date2">3 min read</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_lorem">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_more">Read More</div>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_img"></div>
+                    <div class="blog_date">
+                        <div class="date1">3, Mei 2021</div>
+                        <div class="date2">3 min read</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_lorem">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_more">Read More</div>
+                </div>
+                <div class="blog_box">
+                    <div class="blog_img"></div>
+                    <div class="blog_date">
+                        <div class="date1">3, Mei 2021</div>
+                        <div class="date2">3 min read</div>
+                    </div>
+                    <div class="blog_text">10 graphic design trends to get you inspired in 2021</div>
+                    <div class="blog_lorem">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.</div>
+                    <div class="blog_more">Read More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="end_container">
+            <div class="end_column">
+                <div class="end_box">
+                    <div class="end_begin">
+                        <div class="begin_logo"><img src="ik.png" alt=""></div>
+                        <div class="begin_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </div>
+                </div>
+                <div class="end_end">
+                    <div class="end_1">Privacy Policy</div>
+                    <div class="end_2">Terms and Condition</div>
+                </div>
+                </div>
+                <div class="end_box">
+                    <div class="end_begin1">
+                        <div class="end_about">
+                            <div class="about_title">About</div>
+                            <div class="about_items">About us</div>
+                            <div class="about_items">Courses</div>
+                            <div class="about_items">Mentor</div>
+                            <div class="about_items">Contact Us</div>
+                        </div>
+                        <div class="end_support">
+                            <div class="support_title">Support</div>
+                            <div class="support_item">Careers</div>
+                            <div class="support_item">Help & Support</div>
+                            <div class="support_item">Blog</div>
+                        </div>
+                        <div class="end_company">
+                            <div class="companys_title">Company</div>
+                            <div class="company_items">Privacy Policy</div>
+                            <div class="company_items">Terms of Service</div>
+                            <div class="company_items">Code of Conduct</div>
+                        </div>
+                        
+                    </div>
+                    <div class="end_made">mamatqoulov@gmail.com Arfa`s Studio. We strong together ;)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
